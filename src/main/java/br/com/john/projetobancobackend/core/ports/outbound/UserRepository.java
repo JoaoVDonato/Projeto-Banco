@@ -1,3 +1,4 @@
+/*
 package br.com.john.projetobancobackend.core.ports.outbound;
 
 import br.com.john.projetobancobackend.core.domain.User;
@@ -10,4 +11,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     UserDetails findByLogin(String login);
 
-}
+}*/
