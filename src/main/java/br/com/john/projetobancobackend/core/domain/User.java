@@ -25,11 +25,17 @@ public class User implements UserDetails{
     private String login;
     private String password;
     private UserRole role;
+    @Column(unique = true)
+    private String document;
+    @Column(unique = true)
+    private String email;
 
-    public User(String login, String password, UserRole role) {
+    public User(String login, String password, UserRole role, String document, String email) {
         this.login = login;
         this.password = password;
         this.role = role;
+        this.document = document;
+        this.email = email;
     }
 
     @Override
